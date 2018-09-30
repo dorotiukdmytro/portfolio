@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -14,18 +15,18 @@
         <div class="header-inner">
             <h1>Front End Developer</h1>
             <hr>
-            <p>HTML CSS JavaScript</p>
-            <button>Dowiedz się więcej</button>
+            <p>HTML <span>&middot; </span> CSS <span>&middot;</span> JavaScript</p>
+            <button class="button">Dowiedz się więcej</button>
         </div>
     </header>
     <nav>
         <ul>
-            <li><a href="#">O mnie</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#my-portfolio">Portfolio</a></li>
+            <li><a href="#my-contact">Kontakt</a></li>
         </ul>
     </nav>
-    <section class="about-me">
+    <section class="about-me" id="about">
         <h2>O mnie</h2>
         <hr>
         <figure class="photo">
@@ -33,65 +34,84 @@
         </figure>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit harum unde nam expedita omnis amet deserunt nihil pariatur dolorum quia autem, fugiat necessitatibus obcaecati tempora vel nemo animi modi facere.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt delectus amet placeat nisi recusandae, optio laborum porro quae, mollitia quaerat!</p>
-        <button>Moje portfolio</button>
+        <button class="button">Moje portfolio</button>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="my-portfolio">
         <header class="header-portfolio">
             <h2>Portfolio</h2>
             <hr>
             <div class="portfolio-items">
                 <a class="portfolio-item">
-                    <img src="../portfolio/img/portfolio/photo-1.jpg" alt="">
+                    <img src="../portfolio/img/portfolio/photo-1.jpg" alt="pic-1">
                     <h3>Projekt</h3>
                 </a>
                 <a class="portfolio-item">
-                    <img src="../portfolio/img/portfolio/photo-2.jpg" alt="">
+                    <img src="../portfolio/img/portfolio/photo-2.jpg" alt="pic-2">
                     <h3>Projekt</h3>
                 </a>
                 <a class="portfolio-item">
-                    <img src="../portfolio/img/portfolio/photo-3.jpg" alt="">
+                    <img src="../portfolio/img/portfolio/photo-3.jpg" alt="pic-3">
                     <h3>Projekt</h3>
                 </a>
                 <a class="portfolio-item">
-                    <img src="../portfolio/img/portfolio/photo-4.jpg" alt="">
+                    <img src="../portfolio/img/portfolio/photo-4.jpg" alt="pic-4">
                     <h3>Projekt</h3>
                 </a>
                 <a class="portfolio-item">
-                    <img src="../portfolio/img/portfolio/photo-5.jpg" alt="">
+                    <img src="../portfolio/img/portfolio/photo-5.jpg" alt="pic-5">
                     <h3>Projekt</h3>
                 </a>
                 <a class="portfolio-item">
-                    <img src="../portfolio/img/portfolio/photo-6.jpg" alt="">
+                    <img src="../portfolio/img/portfolio/photo-6.jpg" alt="pic-6">
                     <h3>Projekt</h3>
                 </a>
                 <a class="portfolio-item">
-                    <img src="../portfolio/img/portfolio/photo-7.jpg" alt="">
+                    <img src="../portfolio/img/portfolio/photo-7.jpg" alt="pic-7">
                     <h3>Projekt</h3>
                 </a>
                 <a class="portfolio-item">
-                    <img src="../portfolio/img/portfolio/photo-8.jpg" alt="">
+                    <img src="../portfolio/img/portfolio/photo-8.jpg" alt="pic-8">
                     <h3>Projekt</h3>
                 </a>
                 <a class="portfolio-item">
-                    <img src="../portfolio/img/portfolio/photo-9.jpg" alt="">
+                    <img src="../portfolio/img/portfolio/photo-9.jpg" alt="pic-9">
                     <h3>Projekt</h3>
                 </a>
                 <a class="portfolio-item">
-                    <img src="../portfolio/img/portfolio/photo-10.jpg" alt="">
+                    <img src="../portfolio/img/portfolio/photo-10.jpg" alt="pic-10">
                     <h3>Projekt</h3>
                 </a>
                 <a class="portfolio-item">
-                    <img src="../portfolio/img/portfolio/photo-11.jpg" alt="">
+                    <img src="../portfolio/img/portfolio/photo-11.jpg" alt="pic-11">
                     <h3>Projekt</h3>
                 </a>
                 <a class="portfolio-item">
-                    <img src="../portfolio/img/portfolio/photo-12.jpg" alt="">
+                    <img src="../portfolio/img/portfolio/photo-12.jpg" alt="pic-12">
                     <h3>Projekt</h3>
                 </a>
                 </a>
             </div>
         </header>
     </section>
+    <section class="contact" id="my-contact">
+        <h2>Kontakt</h2>
+        <hr>
+        <form class="form" action="" method="post">
+            <input type="text" placeholder="Imię">
+            <input type="text" placeholder="Nazwisko">
+            <textarea name="message" maxlength="250" placeholder="Wiadomość"></textarea>
+            <input class="button" type="submit" value="Wyślij wiadomość">
+        </form>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright <span>&copy;</span> Akademia 108 Szkoła Programowania</p>
+    </footer>
 </body>
 
 </html>

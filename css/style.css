@@ -24,7 +24,7 @@ header.header {
 }
 
 section {
-    margin: 50px auto;
+    margin: 70px auto;
 }
 
 h2 {
@@ -45,18 +45,28 @@ hr {
     background-color: #007bff;
 }
 
+.header span {
+    font-weight: bold;
+    color: #007bff;
+}
+
 .header-inner p,
 .header-inner button {
     font-size: 20px;
     margin: 20px;
 }
 
-button {
+.button {
     background-color: transparent;
     border: 2px solid #007bff;
     padding: 10px 20px;
     text-transform: uppercase;
     color: #333;
+}
+
+.button:hover {
+    background-color: #007bff;
+    color: white;
 }
 
 
@@ -112,7 +122,7 @@ nav ul li a:hover {
 
 /* Portfolio */
 
-section.portfolio {
+.portfolio {
     background-color: #f2f1ed;
     padding: 50px 0;
 }
@@ -120,7 +130,7 @@ section.portfolio {
 .portfolio-items {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 50px;
+    padding: 50px;
 }
 
 .portfolio-items a {
@@ -132,6 +142,7 @@ section.portfolio {
 .portfolio-items a img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .portfolio-item {
@@ -149,10 +160,65 @@ section.portfolio {
     color: white;
     font-size: 30px;
     transition: .3s;
+    background-color: rgba(18, 109, 238, 0.6);
 }
 
 .portfolio-item:hover h3 {
     opacity: 1;
-    color: white;
-    background-color: rgba(18, 109, 238, 0.6);
+}
+
+/* Kontakt */
+
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+}
+
+input[type="text"] {
+    flex-basis: 45%;
+    height: 30px;
+    padding: 3px;
+}
+
+textarea {
+    height: 60px;
+    flex-basis: 100%;
+    margin-top: 20px;
+    padding: 3px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form .button {
+    margin: 20px auto 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i.fab {
+    font-size: 30px;
+    padding: 0 20px;
+    color: #007bff;
+}
+
+i.fab:hover {
+    color: #777;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f1ed;
+    height: 10vh;
 }
