@@ -24,7 +24,7 @@ header.header {
 }
 
 section {
-    margin: 70px auto;
+    padding: 50px 0;
 }
 
 h2 {
@@ -62,19 +62,19 @@ hr {
     padding: 10px 20px;
     text-transform: uppercase;
     color: #333;
+    transition: .3s;
 }
 
 .button:hover {
     background-color: #007bff;
-    color: white;
+    color: #fff;
 }
 
 
-/* Navigacja*/
+/* Navigacja */
 
 nav {
-    position: relative;
-    background-color: #007bff;
+    /*    position: relative;*/
     height: 60px;
     position: sticky;
     top: 0;
@@ -85,23 +85,26 @@ ul {
     display: flex;
     justify-content: center;
     line-height: 60px;
-}
-
-nav ul li {
+    background-color: #007bff;
     list-style: none;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     padding: 10px 30px;
     text-transform: uppercase;
-    transition: .2s;
+    transition: .3s;
 }
 
 nav ul li a:hover {
     color: #007bff;
-    background-color: white;
+    background-color: #fff;
+}
+
+.main-nav label,
+#menu {
+    display: none;
 }
 
 /* About me */
@@ -137,6 +140,9 @@ nav ul li a:hover {
     position: relative;
     flex-basis: 25%;
     height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio-items a img {
@@ -145,19 +151,13 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
-.portfolio-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .portfolio-item h3 {
     opacity: 0;
     height: 100%;
     width: 100%;
     line-height: 200px;
     position: absolute;
-    color: white;
+    color: #fff;
     font-size: 30px;
     transition: .3s;
     background-color: rgba(18, 109, 238, 0.6);
@@ -203,22 +203,22 @@ textarea {
     align-items: center;
 }
 
-i.fab {
-    font-size: 30px;
-    padding: 0 20px;
+.icons a {
     color: #007bff;
+    margin: 0 20px;
+    transition: .3s;
+    font-size: 30px;
 }
 
-i.fab:hover {
+.icons a:hover {
     color: #777;
 }
 
 /* Footer */
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     background-color: #f2f1ed;
-    height: 10vh;
+    height: 50px;
+    line-height: 50px;
 }
